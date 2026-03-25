@@ -30,11 +30,12 @@ body{
 <body>
 <script>
 (function(){
-  var path=window.location.pathname.replace(/^\/+|\/+$/g,'');
-  if(!path){
+  var hash=window.location.hash.slice(1);
+  if(!hash){
     document.body.innerHTML='<div class="center landing"><h1>req.to</h1></div>';
     return;
   }
+  var path=hash;
   if(!/^[A-Za-z0-9_\-.]+$/.test(path)){show404();return}
   var chunks=path.split('.');
   try{
