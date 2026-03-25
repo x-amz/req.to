@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["HG8N27K4S4.dev.amz.req"],
+        "components": [
+          { "/": "/*" }
+        ]
+      }
+    ]
+  }
+}
